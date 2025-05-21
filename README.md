@@ -21,5 +21,33 @@ ionic serve
 
 Alternatively, you can add the iOS, Android platform and run natively.
 
+### Running with Docker
+
+This project includes a Dockerfile for containerized deployment. Here's how to use it:
+
+#### Build and run the Docker image
+
+```bash
+# Build the image
+docker build -t ionic-travel-app .
+
+# Run the container
+docker run -p 8080:80 ionic-travel-app
+```
+
+The application will be available at http://localhost:8080
+
+#### Using Docker Compose
+
+```bash
+# Build and start the container
+docker-compose up -d
+
+# Stop the container
+docker-compose down
+```
+
+The application will be available at http://localhost:8080
+
 # Are you on Twitter? Lets connect [@93alan](https://twitter.com/93alan)
 # Have you checked out Ionic React Hub yet? [Ionic React Hub](https://ionicreacthub.com)
